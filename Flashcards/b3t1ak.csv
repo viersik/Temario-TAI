@@ -1,0 +1,21 @@
+[Modelo E-R - Peter Chen] ¿En qué año propuso Peter Chen el Modelo Entidad-Relación original?;<b>1976</b>
+[Ingeniería de Software - UML] ¿Qué consorcio u organización de estándares propuso formalmente UML (Unified Modeling Language)?;<b>OMG (Object Management Group)</b>
+[Álgebra Relacional - Operaciones] ¿Qué símbolo griego representa la operación fundamental de Selección?;<b>σ (sigma)</b>
+[Álgebra Relacional - Operaciones] ¿Qué símbolo griego representa la operación fundamental de Proyección?;<b>π (pi)</b>
+[Álgebra Relacional - Operaciones] ¿Qué símbolo griego representa la operación fundamental de Renombramiento?;<b>ρ (rho)</b>
+[Álgebra Relacional - Operaciones Derivadas] ¿Cómo se expresa formalmente la Intersección (∩) utilizando únicamente diferencias (-)?;<b>A ∩ B = A - (A - B)</b>
+[Métrica v3 - Ciclo de Vida] ¿En qué proceso específico de Métrica v3 se realiza el diseño lógico de datos?;<b>DSI (Diseño del Sistema de Información)</b>
+[Métrica v3 - Ciclo de Vida] ¿En qué proceso específico de Métrica v3 se realiza el diseño físico de datos?;<b>DTS (Diseño Técnico del Sistema)</b>
+[Métrica v3 - Entregables] ¿Qué nivel de normalización mínimo debe cumplir el entregable "Modelo de Datos Lógico" según Métrica v3?;<b>3FN (Tercera Forma Normal) o superior</b>
+[Métrica v3 - Entregables] ¿Cuáles son los 4 productos específicos del diseño de bases de datos definidos en Métrica v3?;<b>Diccionario de Datos, Modelo de Datos Lógico, Modelo de Datos Físico y Especificación de Acceso a Datos</b>
+[Normalización - 1FN] ¿Qué estructuras o tipos de atributos prohíbe formalmente la Primera Forma Normal (1FN) además de exigir atomicidad?;<b>Grupos repetitivos y atributos multivaluados</b>
+[Normalización - 2FN] ¿Qué tipo de dependencias específicas elimina la Segunda Forma Normal (2FN)?;<b>Dependencias parciales</b>
+[Normalización - 3FN] ¿Qué tipo de dependencias específicas elimina la Tercera Forma Normal (3FN)?;<b>Dependencias transitivas</b>
+[Normalización - BCNF] ¿Qué condición estructural obligatoria debe cumplir todo determinante para alcanzar la Forma Normal de Boyce-Codd (BCNF)?;<b>Ser una clave candidata</b>
+[Normalización - 4FN] ¿Qué tipo de dependencias específicas elimina la Cuarta Forma Normal (4FN)?;<b>Dependencias multivaluadas</b>
+[Normalización - 5FN] ¿Qué denominación alternativa recibe la Quinta Forma Normal (5FN) debido a su fundamento de proyección-unión?;<b>Forma Normal de Proyección-Unión</b>
+[Normalización - 5FN] ¿Qué dependencias específicas elimina la Quinta Forma Normal (5FN) para evitar anomalías en relaciones de grado superior?;<b>Dependencias de reunión (Join Dependency)</b>
+[Teoría de Datos - Dependencias] ¿Cómo se denomina formalmente la dependencia funcional X -> Y si Y está contenido en X?;<b>Trivial</b>
+[Teoría de Datos - Dependencias Transitivas] En la transitividad A -> B y B -> C, ¿qué dos condiciones debe cumplir C respecto a la clave y a A para conformar una dependencia transitiva?;<b>No ser atributo clave ni estar incluido en A</b>
+[Métrica v3 - Definición] ¿Para qué sirve medir con Métrica v3 en el ámbito de la Administración Pública en España?;<b>Estimar el tamaño funcional del software</b>
+[Modelo EER - Métrica v3] ¿Cuáles son los 3 elementos que definen formalmente una relación entre entidades bajo Métrica v3?;<b>Nombre de la relación, Cardinalidad y Tipo de correspondencia</b>

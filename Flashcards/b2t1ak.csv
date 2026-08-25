@@ -1,0 +1,22 @@
+[Representación - Codificación] ¿Qué serie de estándares ISO/IEC se utiliza específicamente para codificar los alfabetos europeos?;<b>ISO/IEC 8859</b>
+[Representación - Codificación] ¿Cuántos bytes por carácter utiliza exactamente la codificación UTF-16?;<b>2 o 4 bytes</b>
+[Representación - Sonido] ¿Cuál es el valor exacto de la frecuencia de muestreo estándar de un CD de audio?;<b>44.100 Hz</b>
+[Representación - Sonido] ¿Cuál es la resolución de cuantificación estándar de un CD de audio expresada en bits por muestra?;<b>16 bits por muestra</b>
+[Representación - Compresión] ¿Qué algoritmo matemático de compresión con pérdida utiliza fundamentalmente el formato JPEG clásico?;<b>DCT (Transformada del coseno discreta)</b>
+[Representación - Compresión] ¿Qué técnica matemática de compresión (con pérdida o híbrida) utiliza el formato de imagen JPEG2000?;<b>Wavelet (DWT)</b>
+[Componentes - Interfaces] ¿Qué estándar formal de la IEEE rige la interfaz de datos FireWire?;<b>IEEE 1394</b>
+[Componentes - Interfaces] ¿Qué estándar de la IEEE define formalmente el puerto paralelo de impresoras antiguas?;<b>IEEE 1284</b>
+[Componentes - Interfaces] ¿Qué estándar de la IEEE define las conexiones de red por cable LAN Ethernet?;<b>IEEE 802.3</b>
+[Componentes - Interfaces] ¿Qué conector y estándar físico (SFF) corresponde a la interfaz U.2 para SSDs de clase empresarial?;<b>SFF-8639</b>
+[Componentes - Interfaces] ¿Cuál es la velocidad máxima de transferencia de datos especificada para la norma USB 3.2 Gen 2x2?;<b>20 Gbps</b>
+[Componentes - Interfaces] ¿Cuál es la velocidad máxima de transferencia de datos de la norma USB4?;<b>40 Gbps</b>
+[Componentes - Placa Base] ¿Cuáles son las dimensiones físicas exactas en centímetros de una placa base ATX estándar?;<b>30,5 x 24,4 cm</b>
+[Componentes - Placa Base] ¿Cuáles son las dimensiones físicas exactas en centímetros de una placa base Mini-ITX?;<b>17 x 17 cm</b>
+[Componentes - RAM] ¿Cuántos pines o contactos posee físicamente un módulo de memoria RAM de formato DIMM DDR4?;<b>288 pines</b>
+[Componentes - RAM] ¿Cuántos pines o contactos posee un módulo de memoria RAM de formato DIMM DDR3?;<b>240 pines</b>
+[Componentes - RAM] ¿Cuántos pines o contactos posee físicamente un módulo SO-DIMM DDR4?;<b>260 pines</b>
+[Componentes - RAM] ¿Cuál es el voltaje de alimentación estándar de la memoria RAM DDR4?;<b>1,2 V</b>
+[Componentes - RAM] ¿Cuál es el voltaje de alimentación estándar de la memoria RAM DDR5?;<b>1,1 V</b>
+[Componentes - Placa Base] ¿Cuál es el tamaño típico de almacenamiento máximo que posee la memoria ROM-CMOS?;<b>Menor de 512 bytes</b>
+[Componentes - Placa Base] ¿Qué modelo de batería de botón estándar mantiene alimentado el circuito CMOS y el reloj en la placa base?;<b>CR2032</b>
+[Componentes - Almacenamiento] ¿Cuál es el límite práctico de velocidad de transferencia de un SSD conectado mediante interfaz SATA III?;<b>~600 MB/s</b>

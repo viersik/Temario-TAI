@@ -1,0 +1,24 @@
+[Linux - Permisos] ¿Qué valor octal corresponde a los permisos de lectura (r), escritura (w) y ejecución (x) respectivamente?;<b>4, 2, 1</b>
+[Linux - Permisos] ¿Qué permisos simbólicos exactos corresponden a la representación octal 755?;<b>rwxr-xr-x</b>
+[Linux - CLI] ¿Qué comando y opción muestra la versión exacta del kernel de Linux activo?;<b>uname -r</b>
+[Linux - CLI] ¿Qué opción del comando cp clona un archivo o directorio preservando todos sus atributos como propietario, permisos y fechas?;<b>-a</b>
+[Linux - CLI] ¿Qué comando y opciones finalizan de forma forzada todos los procesos que estén bloqueando el uso de un sistema de archivos para poder desmontarlo?;<b>fuser -km</b>
+[Linux - CLI] ¿Qué opción del comando userdel elimina también el directorio home físico del usuario?;<b>-r</b>
+[Linux - CLI] En comandos de red como netstat o ss, ¿qué significan las opciones agrupadas -tuln?;<b>TCP (-t), UDP (-u), escucha (-l) y sin resolución DNS (-n)</b>
+[Linux - CLI] ¿Qué comando y opciones de tar empaquetan y comprimen utilizando el algoritmo bzip2 (.tar.bz2)?;<b>tar -cvfj</b>
+[Linux - CLI] ¿Qué comando y opciones de tar empaquetan y comprimen utilizando el algoritmo gzip (.tar.gz)?;<b>tar -cvfz</b>
+[Linux - CLI] ¿Qué comando cambia el nivel de ejecución (runlevel) a modo monousuario para tareas de soporte crítico?;<b>Init 1</b>
+[Linux - CLI] ¿Qué comando y opciones de rsync realizan una sincronización recursiva, preservando todos los atributos físicos del original con salida detallada?;<b>rsync -av</b>
+[Linux - CLI] ¿Qué comando y opción muestran las últimas 10 líneas de un log en consola y se quedan monitorizando cambios en vivo?;<b>tail -f</b>
+[Mantenimiento - Métricas] ¿Qué métrica de disponibilidad define el tiempo medio que se tarda en reparar un sistema tras un fallo?;<b>MTTR</b>
+[Mantenimiento - Métricas] ¿Qué métrica mide la fiabilidad de sistemas reparables calculando el tiempo medio transcurrido entre dos fallos consecutivos?;<b>MTBF</b>
+[Mantenimiento - Métricas] ¿Qué métrica de disponibilidad evalúa el tiempo medio esperado hasta que ocurre el primer fallo en elementos no reparables?;<b>MTTF</b>
+[Mantenimiento - Métricas] ¿Qué métrica (SLA) define la cantidad máxima de datos (expresada en tiempo de transacciones) que una organización tolera perder en caso de desastre?;<b>RPO</b>
+[Mantenimiento - Métricas] ¿Qué métrica (SLA) define el tiempo máximo tolerable que un servicio puede estar inactivo tras un incidente grave?;<b>RTO</b>
+[Windows - CLI] ¿Qué comando NET se utiliza para configurar políticas globales de cuentas como la caducidad de contraseñas y bloqueos por intentos fallidos?;<b>net accounts</b>
+[Windows - CLI] ¿Qué comando NET exacto muestra el listado de miembros con derechos de administrador local en la máquina?;<b>net localgroup Administradores</b>
+[Windows - CLI] ¿Qué comando de Windows devuelve la descripción en texto plano asociada a un código de error numérico devuelto por el sistema?;<b>net helpmsg <código></b>
+[Windows - CLI] ¿Qué comando NET muestra los archivos abiertos en recursos compartidos y permite forzar su cierre?;<b>net file</b>
+[Windows - CLI] ¿Qué comando NET ejecutado sin parámetros expone el listado de todos los servicios actualmente activos en Windows?;<b>net start</b>
+[Entornos MDM] ¿Qué modelo de gestión móvil define terminales propiedad de la empresa restringidos de forma exclusiva a uso profesional sin permitir uso personal?;<b>COBO</b>
+[Entornos MDM] ¿Qué modelo de gestión móvil describe terminales propiedad de la empresa pero en los que se autoriza un uso personal regulado al empleado?;<b>COPE</b>
