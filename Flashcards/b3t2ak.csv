@@ -1,0 +1,21 @@
+question,answer
+[Lenguajes - Generación] Clasificación por generación del lenguaje ensamblador,2GL (segunda generación)
+[Lenguajes - Generación] Clasificación por generación del código máquina binario,1GL (primera generación)
+[Lenguajes - Traductores] Tipo de compilador que traduce código fuente de un lenguaje a otro de nivel similar,Transpilador (source-to-source compiler)
+[Lenguajes - Traductores] Compilador que genera código ejecutable para una plataforma distinta a aquella en la que se ejecuta,Compilador cruzado (cross compiler)
+[Tipos de datos - Memoria] Tamaño habitual de almacenamiento de un tipo de datos carácter (char) en muchos lenguajes,1 byte (8 bits)
+[Tipos de datos - Memoria] Cantidad de valores diferentes que puede representar un tipo de datos byte,256 valores (de 0 a 255)
+[Tipos de datos - Memoria] Tamaño en bits de un nibble,4 bits
+[Operadores - Bitwise] Operador de asignación que realiza la operación XOR bit a bit y asigna el resultado,^=
+[Operadores - Bitwise] Operador de asignación que realiza la operación AND bit a bit y asigna el resultado,&=
+[Operadores - Bitwise] Operador de asignación que desplaza a la izquierda y asigna el resultado,<<=
+[Operadores - Python] Operador de asignación que realiza la división entera en Python y asigna el resultado,//=
+[Operadores - Python] Operador de asignación que calcula la potencia en Python y asigna el resultado,**=
+[Estructuras de datos - Complejidad] Complejidad temporal de acceso directo o aleatorio a cualquier elemento de un array contiguo,O(1) (tiempo constante)
+[Estructuras de datos - TAD] Principio de ordenación que sigue el Tipo Abstracto de Dato (TAD) Pila,LIFO (Last In, First Out)
+[Estructuras de datos - TAD] Principio de ordenación que sigue el Tipo Abstracto de Dato (TAD) Cola,FIFO (First In, First Out)
+[Estructuras de datos - Colas] Nombre de la variante de cola que permite inserciones y eliminaciones por ambos extremos,Bicola (double-ended queue o deque)
+[Estructuras de datos - Árboles] Grado máximo de un árbol binario,2 (máximo de 2 hijos por nodo)
+[Estructuras de datos - Árboles] Recorrido de árbol en profundidad (DFS) que en un árbol binario de búsqueda (ABB) devuelve los datos ordenados ascendentemente,Inorden (izquierdo → raíz → derecho)
+[Estructuras de datos - Árboles] Recorrido de árbol en profundidad (DFS) que se utiliza para eliminar árboles o generar expresiones postfijas (notación polaca inversa),Postorden (izquierdo → derecho → raíz)
+[Estructuras de datos - Árboles] Tipo de recorrido en amplitud (BFS) de un árbol binario que requiere el uso de una cola,Recorrido por niveles

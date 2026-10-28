@@ -1,0 +1,416 @@
+{
+  "bloques": [
+    {
+      "nombre": "Bloque I",
+      "descripcion": "Haz clic en cada tarjeta para desplegar los consejos de estudio. Los temas clave están resaltados en dorado.",
+      "temas": [
+        {
+          "numero": 1,
+          "titulo": "La Constitución Española",
+          "dificultad": 4,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Fechas, Título I, reformas y artículos suspendibles.",
+          "tips": [
+            "Memoriza fechas importantes (31/10, 6/12, 27/12, 29/12 de 1978).",
+            "Fíjate en el Título I, Cap. 2, Sección 1ª.",
+            "Reformas: atención al artículo 49.",
+            "Reconoce artículos suspendibles."
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Las Cortes Generales",
+          "dificultad": 4,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Inelegibilidad, escaños y materias de Ley Orgánica.",
+          "tips": [
+            "Personas inelegibles para las Cámaras.",
+            "Distribución de diputados y senadores.",
+            "Materias de Ley Orgánica.",
+            "Recursos de amparo e inconstitucionalidad."
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "El Gobierno",
+          "dificultad": 4,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Nombramientos, ceses y órganos colegiados.",
+          "tips": [
+            "Quién nombra y cesa ministros y secretarios.",
+            "Funciones del Gobierno.",
+            "Órganos unipersonales y colegiados."
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "TREBEP, Agenda 2030 y Buen Gobierno",
+          "dificultad": 3,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "TREBEP (plazos, permisos, faltas), ODS y Planes.",
+          "tips": [
+            "TREBEP → plazos, permisos y faltas.",
+            "Agenda 2030 → los 17 ODS.",
+            "Buen Gobierno → planes y objetivos."
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Igualdad y diversidad",
+          "dificultad": 2,
+          "etiquetas": [],
+          "descripcion": "Normativa de igualdad, LGTBI y discapacidad.",
+          "tips": [
+            "Revisa el marco normativo general.",
+            "Comprende definiciones clave.",
+            "Analiza la Ley 4/2023 LGTBI."
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Sociedad de la Información",
+          "dificultad": 5,
+          "etiquetas": [],
+          "descripcion": "Firma electrónica, sanciones y validaciones.",
+          "tips": [
+            "Infracciones y sanciones digitales.",
+            "Validación de certificados.",
+            "Cartera Europea de Identidad Digital (EUDI).",
+            "Diferencia tipos de firma electrónica y DNIe."
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Protección de Datos",
+          "dificultad": 4,
+          "etiquetas": [],
+          "descripcion": "Principios, derechos y obligaciones.",
+          "tips": [
+            "Definiciones y principios.",
+            "Régimen jurídico y derechos digitales."
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Acceso electrónico",
+          "dificultad": 5,
+          "etiquetas": ["⭐ Muy preguntable"],
+          "descripcion": "Sistemas de identificación, ENS y ENI.",
+          "tips": [
+            "Sistemas de identificación y registro.",
+            "ENS → medidas de seguridad.",
+            "ENI → estructura y NTI."
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Instrumentos electrónicos",
+          "dificultad": 2,
+          "etiquetas": [],
+          "descripcion": "Servicios a ciudadanos y administración digital.",
+          "tips": [
+            "Memoriza los servicios digitales principales.",
+            "Identifica servicios dirigidos a ciudadanos."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Bloque II",
+      "descripcion": "Abre cada tarjeta para ver los consejos rápidos de estudio. Etiquetas “⭐ Tema clave” y “Fundamental” según el documento.",
+      "temas": [
+        {
+          "numero": 1,
+          "titulo": "Informática básica",
+          "dificultad": 1,
+          "etiquetas": ["✅ Fundamental"],
+          "descripcion": "Representación de la información, funciones lógicas y arquitectura básica.",
+          "tips": [
+            "Representación de la información y conversiones.",
+            "Memorizar funciones lógicas básicas.",
+            "Arquitecturas y componentes internos."
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Periféricos",
+          "dificultad": 1,
+          "etiquetas": [],
+          "descripcion": "Enfoque práctico en versiones y velocidades.",
+          "tips": [
+            "Pon el foco en velocidades y versiones más recientes."
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Tipos abstractos y estructuras de datos",
+          "dificultad": 5,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Clasificación y funcionamiento: atención especial a árboles.",
+          "tips": [
+            "Ubica los diferentes tipos y estructuras de datos.",
+            "Comprende su funcionamiento (especialmente recorrido de árboles)."
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Sistemas operativos",
+          "dificultad": 5,
+          "etiquetas": [],
+          "descripcion": "Enlace con BIV T1 y T4; Linux y Windows.",
+          "tips": [
+            "Relaciona con Bloque IV Temas 1 y 4.",
+            "Memoriza comandos Linux conocidos.",
+            "Organización de registros en Windows."
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Sistemas de gestión de bases de datos",
+          "dificultad": 2,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Reglas de Codd, tipos de BD y relación con BIV T2.",
+          "tips": [
+            "Aprende las 12 reglas de Codd.",
+            "Memoriza los tipos de bases de datos y ubica cada una.",
+            "Relaciona con Bloque IV · Tema 2."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Bloque III",
+      "descripcion": "Abre cada tarjeta para ver los consejos rápidos de estudio. Los temas clave están resaltados en dorado.",
+      "temas": [
+        {
+          "numero": 1,
+          "titulo": "Modelado de datos, metodologías y reglas",
+          "dificultad": 4,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Modelado de datos y formas normales.",
+          "tips": [
+            "Practica ejercicios de modelado de datos.",
+            "Repasa las formas normales para la normalización."
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lenguajes de programación",
+          "dificultad": 4,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Identificación de lenguajes y librerías principales.",
+          "tips": [
+            "Reconoce las diferencias entre lenguajes.",
+            "Domina los paquetes más usados de Java y .NET."
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Lenguajes de interrogación de bases de datos",
+          "dificultad": 4,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Uso práctico de SQL y consultas.",
+          "tips": [
+            "Practica sentencias SQL para afianzar conceptos.",
+            "Aplica lo aprendido creando consultas reales."
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Diseño y programación orientada a objetos",
+          "dificultad": 4,
+          "etiquetas": [],
+          "descripcion": "Concepto base de la POO.",
+          "tips": [
+            "Comprende los pilares de la POO: herencia, polimorfismo, encapsulación y abstracción.",
+            "Si es nuevo para ti, dedica tiempo a entender el concepto general antes de los ejemplos."
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Arquitectura Java EE/Jakarta EE y plataforma .NET",
+          "dificultad": 5,
+          "etiquetas": [],
+          "descripcion": "Comparación general de ambas plataformas.",
+          "tips": [
+            "Conoce los conceptos generales de ambas arquitecturas.",
+            "Ubica qué componentes pertenecen a cada una."
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Arquitectura de sistemas cliente/servidor y multicapas",
+          "dificultad": 5,
+          "etiquetas": [],
+          "descripcion": "Diferencias entre arquitecturas de servicios.",
+          "tips": [
+            "Presta atención a las diferentes arquitecturas y cómo se comunican los servicios.",
+            "Identifica ventajas e inconvenientes de cada modelo."
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Aplicaciones web",
+          "dificultad": 4,
+          "etiquetas": [],
+          "descripcion": "HTML5, CSS3 y diseño web adaptativo.",
+          "tips": [
+            "Revisa las nuevas etiquetas y APIs de HTML5.",
+            "Practica CSS3 y sus propiedades más actuales."
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Accesibilidad, diseño universal y usabilidad",
+          "dificultad": 4,
+          "etiquetas": [],
+          "descripcion": "Normas WCAG y principios de accesibilidad.",
+          "tips": [
+            "Identifica a qué principio WCAG pertenece cada pauta.",
+            "Recuerda los cuatro pilares: perceptible, operable, comprensible y robusto."
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Repositorios",
+          "dificultad": 2,
+          "etiquetas": [],
+          "descripcion": "Herramientas y clasificación.",
+          "tips": [
+            "Memoriza las herramientas más utilizadas.",
+            "Clasifícalas según su tipo de repositorio."
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Bloque IV",
+      "descripcion": "Abre cada tarjeta para ver los consejos rápidos de estudio. Los temas clave están resaltados en dorado.",
+      "temas": [
+        {
+          "numero": 1,
+          "titulo": "Administración del sistema operativo y software de base",
+          "dificultad": 5,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Linux/Windows, permisos, paquetes y versiones recientes.",
+          "tips": [
+            "Relación con Bloque II · Tema 4.",
+            "Estructura de directorios en Linux.",
+            "Comandos en Linux y Windows.",
+            "Permisos en Linux.",
+            "Gestores de paquetes.",
+            "Versiones recientes de sistemas operativos."
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Administración de bases de datos",
+          "dificultad": 4,
+          "etiquetas": [],
+          "descripcion": "Tipos de BD, Oracle, RAID, almacenamiento y backups.",
+          "tips": [
+            "Diferenciar tipos de bases de datos y ejemplos.",
+            "ORACLE: estructura física y lógica.",
+            "Niveles RAID.",
+            "DAS / NAS / SAN.",
+            "Políticas de backup y virtualización."
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Administración de servidores de correo electrónico",
+          "dificultad": 3,
+          "etiquetas": [],
+          "descripcion": "Puertos y protocolos; clientes más usados.",
+          "tips": [
+            "Protocolos y números de puerto.",
+            "Clientes de correo más importantes."
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Administración de redes de área local",
+          "dificultad": 4,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Comandos de admin, Windows/Linux y SNMP.",
+          "tips": [
+            "Relación con Bloque II · Tema 4.",
+            "Comandos para administradores (Linux y Windows).",
+            "SNMP."
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Conceptos de seguridad de los SI",
+          "dificultad": 4,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Definiciones, CCN, criptografía y ataques.",
+          "tips": [
+            "Definiciones básicas del área.",
+            "Soluciones CCN.",
+            "Técnicas criptográficas y tipos de ataque."
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Comunicaciones",
+          "dificultad": 4,
+          "etiquetas": [],
+          "descripcion": "Ancho de banda, fibra, cableado y 802.1x.",
+          "tips": [
+            "Ancho de banda.",
+            "Tipos de fibra óptica.",
+            "Cableado estructurado.",
+            "Comunicaciones móviles y grupos IEEE 802.1x."
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Modelos TCP/IP y OSI. Protocolos TCP/IP",
+          "dificultad": 3,
+          "etiquetas": [],
+          "descripcion": "Capas de modelos y ejercicios de direccionamiento.",
+          "tips": [
+            "Memorizar capas de ambos modelos.",
+            "Practicar direccionamiento."
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Internet",
+          "dificultad": 3,
+          "etiquetas": [],
+          "descripcion": "Hitos, protocolos, códigos HTTP y comandos FTP.",
+          "tips": [
+            "Hitos históricos de Internet.",
+            "Protocolos de Internet.",
+            "Códigos HTTP.",
+            "Comandos FTP."
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Seguridad y protección en redes de comunicaciones",
+          "dificultad": 3,
+          "etiquetas": [],
+          "descripcion": "Firewalls, proxys, IDS/IPS y VPNs.",
+          "tips": [
+            "Firewalls, proxys, IDS/IPS y VPNs."
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Redes locales",
+          "dificultad": 4,
+          "etiquetas": ["⭐ Tema clave"],
+          "descripcion": "Definición, tipologías, topologías, dispositivos y VLAN.",
+          "tips": [
+            "Definición, tipologías y topologías.",
+            "Dispositivos de interconexión y capa OSI.",
+            "VLAN."
+          ]
+        }
+      ]
+    }
+  ]
+}

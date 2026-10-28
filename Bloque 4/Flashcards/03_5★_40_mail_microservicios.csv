@@ -1,0 +1,10 @@
+¿En qué zona de la red debe ubicarse el servidor de correo electrónico según el CCN?	En la Zona Desmilitarizada (DMZ).
+¿Qué orden SMTP invierte los roles de cliente y servidor, actualmente obsoleta por motivos de seguridad?	TURN
+¿En qué puertos escucha un Agente de Transferencia de Mensajes (MTA)?	En los puertos TCP 25 y 587 (este último para envío autenticado).
+En los códigos de respuesta SMTP, ¿qué indica la categoría 4XX?	Error temporal (el comando no se ha completado, pero puede volver a intentarse).
+¿En qué RFC está especificado el protocolo POP3?	RFC 1939
+¿Qué puerto TCP utiliza el protocolo POP3 cuando se habilita el cifrado SSL/TLS?	Puerto TCP 995 (frente al puerto TCP 110 sin cifrar).
+¿Qué protocolo de la capa de aplicación emplean sistemas de colas de mensajes como RabbitMQ en la comunicación asíncrona de microservicios?	AMQP (Advanced Message Queuing Protocol).
+¿Cuál es el inconveniente estructural del patrón de integración por Orquestación entre microservicios frente a la Coreografía?	Introduce un punto único de fallo (al depender de un servicio central coordinador).
+¿Cuáles son los cuatro campos principales que componen la estructura básica de los manifiestos u objetos de Kubernetes?	`apiVersion`, `kind`, `metadata` y `spec`.
+¿Qué dos características relativas a la gestión de buzones NO permite el protocolo propietario Exchange ActiveSync (EAS)?	Buzones compartidos y acceso delegado.

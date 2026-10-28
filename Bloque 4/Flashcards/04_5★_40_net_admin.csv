@@ -1,0 +1,20 @@
+"¿Cuáles son los puertos UDP estándar utilizados por SNMP para peticiones y notificaciones, y qué puertos emplea cuando opera sobre TLS (SNMP over TLS)?","• Estándar: UDP 161 para peticiones/consultas del agente y UDP 162 para traps/notificaciones al NMS.
+• SNMP sobre TLS: UDP 10161 para peticiones al agente y UDP 10162 para traps al NMS."
+¿Cuál es el desfase máximo de reloj (desincronización horaria) tolerado por el protocolo Kerberos entre los sistemas participantes?,5 minutos. Kerberos exige sincronización de hora para prevenir ataques de repetición/reintervención.
+¿Qué puerto y qué protocolos de la capa de transporte utiliza el protocolo de autenticación Kerberos?,"Puerto 88, utilizando tanto UDP como TCP como protocolos de transporte."
+¿Cuáles son los tres niveles de seguridad definidos en SNMPv3 USM (User-based Security Model) y qué mecanismos de autenticación y cifrado implementa cada uno?,"• noAuthNoPriv: Sin autenticación ni cifrado (privacidad).
+• authNoPriv: Con autenticación (HMAC-MD5-96 o HMAC-SHA-96) y sin cifrado.
+• authPriv: Con autenticación (MD5 o SHA) y cifrado/privacidad (DES o AES)."
+¿Cuál es la diferencia fundamental entre los mensajes SNMP Trap e InformRequest respecto al mecanismo de confirmación y el tipo de entidades que se comunican?,"• Trap: Notificación enviada por un agente al gestor NMS sin requerir ni esperar confirmación.
+• InformRequest: Notificación enviada entre distintos gestores NMS que requiere confirmación explícita de recepción (mecanismo más fiable introducido en SNMPv2)."
+"En el protocolo de gestión de configuración NETCONF (RFC 6241), ¿cuáles son el formato de representación de datos, el lenguaje de modelado de datos y el transporte seguro utilizado?","• Formato de representación de datos: XML.
+• Lenguaje de modelado de datos: YANG.
+• Transporte seguro: RPCs (Remote Procedure Calls) sobre SSH."
+¿Cómo se diferencian las especificaciones RMON1 (RFC 1757) y RMON2 (RFC 2021) según el nivel del modelo OSI en el que operan?,"• RMON1: Monitoriza el tráfico orientado a la capa de enlace de datos (nivel 2 OSI).
+• RMON2: Amplía el análisis a las capas superiores, desde la capa de red (nivel 3 OSI) hasta la capa de aplicación (nivel 7 OSI)."
+¿En qué se diferencian sFlow y NetFlow en cuanto a la capa OSI principal de operación y la técnica empleada para procesar el tráfico?,"• sFlow: Funciona en la capa 2 del modelo OSI y realiza un muestreo estadístico aleatorio de paquetes, reduciendo drásticamente el consumo de recursos.
+• NetFlow: Desarrollado por Cisco, analiza y registra exhaustivamente la totalidad de los flujos de datos IP que atraviesan un dispositivo."
+"Dentro del flujo de autenticación Kerberos, ¿qué mensajes específicos se utilizan para la solicitud del TGT, la solicitud de un Service Ticket y la autenticación ante el servicio?","• Solicitud de TGT: KRB_AS_REQ (petición) y KRB_AS_REP (respuesta con TGT).
+• Solicitud de Service Ticket (ST): KRB_TGS_REQ (petición) y KRB_TGS_REP (respuesta con ST).
+• Autenticación ante el servicio: KRB_AP_REQ (petición del cliente al servidor de aplicación)."
+"A diferencia de NetFlow (que típicamente utiliza UDP), ¿qué protocolos de la capa de transporte admite el estándar abierto IPFIX (RFC 7011 a 7015)?","IPFIX admite TCP, UDP y SCTP como protocolos de la capa de transporte."

@@ -1,0 +1,104 @@
+¿Qué es un periférico según la definición del temario?,"Todo dispositivo de hardware que amplía la funcionalidad del sistema informático, permitiendo que el equipo se comunique con el usuario u otros sistemas."
+¿Cuáles son los dos componentes de hardware que constituyen el núcleo indispensable de un equipo informático?,La CPU y la memoria RAM.
+¿Cómo se clasifican los periféricos según su ubicación respecto al chasis del ordenador?,Internos y externos.
+¿Qué función realizan los periféricos de entrada?,Capturan información del entorno físico o del usuario y la transforman en datos digitales procesables por el ordenador.
+¿A qué categoría funcional de periféricos pertenecen los altavoces y los proyectores?,Periféricos de salida.
+¿A qué categoría funcional pertenece una pantalla táctil?,Periférico mixto (entrada y salida simultánea).
+¿Por qué motivo una impresora multifunción está clasificada como un periférico mixto?,"Porque integra funciones de entrada (escaneo), de salida (impresión) y mixtas (copia)."
+¿Qué son las interfaces físicas de un periférico?,"Elementos de hardware (conectores, puertos, cables o buses) que permiten la conexión material entre el periférico y el equipo."
+¿Qué son las interfaces lógicas de un periférico?,Componentes de software que gestionan la comunicación y el entendimiento entre el sistema operativo y el dispositivo.
+¿Cuál es la velocidad máxima de transferencia de la interfaz USB 2.0?,480 Mbps.
+¿Qué velocidad máxima de transferencia puede alcanzar la interfaz USB 3.x?,Hasta 20 Gbps.
+¿Cuál es la velocidad máxima de transferencia de datos especificada para HDMI 2.1?,Hasta 48 Gbps.
+¿Qué resoluciones y frecuencias de refresco máximas permite la interfaz HDMI 2.1?,4K a 120 Hz u 8K a 60 Hz.
+¿Cuál es la tasa de transferencia máxima alcanzada por DisplayPort 2.1?,Hasta 80 Gbps.
+¿Qué rendimiento de visualización máximo admite DisplayPort 2.1?,8K a 60 Hz y 4K a más de 240 Hz.
+¿Cuál es la velocidad máxima de transferencia de la interfaz SATA III?,600 MB/s.
+¿Qué velocidad máxima de lectura/escritura alcanza una unidad NVMe sobre el bus PCIe 4.0?,Hasta 7.000 MB/s.
+¿Qué velocidad máxima de lectura/escritura alcanza una unidad NVMe sobre el bus PCIe 5.0?,Hasta aproximadamente 14.000 MB/s.
+¿Cuál es la velocidad máxima de transferencia de la interfaz Thunderbolt 4?,Hasta 40 Gbps.
+¿Qué velocidad máxima de transferencia alcanza la interfaz Thunderbolt 5 en modo ráfaga?,Hasta 120 Gbps (con estándar de 80 Gbps).
+¿Cuál es la potencia máxima de alimentación admitida por el estándar USB Power Delivery 3.1 en modo Extended Power Range?,Hasta 240 W.
+¿A qué tipo de señal correspondía la interfaz de vídeo legacy VGA?,Señal analógica.
+¿De qué término inglés procede la denominación del puerto paralelo LPT?,Line Printer.
+¿Para qué se sigue utilizando la interfaz serie RS-232 en la actualidad?,"Para robótica, entornos industriales y configuración de dispositivos de red."
+¿En qué entornos se sigue conservando el puerto PS/2 para teclado y ratón?,En la BIOS del sistema y en entornos de alta seguridad.
+¿Qué significado tienen las siglas SCSI en almacenamiento empresarial?,Small Computer System Interface.
+¿Qué interfaz serie profesional ha sustituido a la tecnología SCSI tradicional en servidores?,SAS (Serial Attached SCSI).
+¿Qué ventaja clave ofrecen las unidades de disco SAS respecto a SATA en servidores?,"Mayor fiabilidad, mayor velocidad y soporte para discos de doble puerto (dual-port)."
+¿Cuál es el alcance físico o rango de cobertura típico de la tecnología Bluetooth 5.x?,Aproximadamente 10 metros.
+¿A partir de qué versión de Bluetooth se incluye el perfil LE Audio para transmisión de audio de bajo consumo?,Bluetooth 5.2.
+¿Cuál es la velocidad teórica máxima de transferencia especificada para Wi-Fi 7?,Hasta 46 Gbps.
+¿Cuál es el rango máximo de distancia de funcionamiento de la tecnología NFC?,Menos de 10 cm.
+¿Qué es un controlador o driver?,Software específico que actúa como traductor entre el sistema operativo y el hardware del periférico.
+¿Cuál es la función del sistema Plug and Play (PnP)?,"Detectar, identificar, configurar e instalar automáticamente dispositivos de hardware sin intervención manual del usuario."
+¿Cuál es el segundo paso en la secuencia de funcionamiento del sistema Plug and Play al conectar un periférico?,Lectura del identificador de hardware (ID único del dispositivo).
+¿Qué comando de la consola de Linux muestra los dispositivos conectados al bus PCI y PCIe?,lspci
+¿Qué comando de la consola de Linux se utiliza para listar todos los dispositivos USB conectados?,lsusb
+¿Qué comando de Linux permite consultar en tiempo real los mensajes del kernel ante eventos de hardware?,dmesg
+¿Qué comando de la consola de Linux se utiliza para cargar manualmente un módulo o controlador en el kernel?,modprobe
+¿Qué comando de Linux lista todos los módulos de controlador cargados actualmente en el kernel?,lsmod
+¿Qué comando se utiliza en distribuciones Debian/Ubuntu para instalar un paquete de controlador desde la terminal?,apt install nombre-paquete
+¿Qué comando se usa en distribuciones Arch Linux para la instalación de paquetes desde la terminal?,pacman -S
+¿Qué herramienta nativa de Ubuntu permite gestionar e instalar controladores propietarios como los de tarjetas NVIDIA?,Controladores adicionales.
+¿Qué herramienta gráfica nativa de Windows se utiliza para administrar la jerarquía de hardware y solucionar conflictos de controladores?,Administrador de dispositivos.
+¿A través de qué menú del sistema operativo macOS se accede al Informe del sistema para auditar el hardware instalado?,Menú Apple (Acerca de este Mac).
+¿En qué unidad se mide formalmente la resolución de una impresora?,En PPP (Puntos Por Pulgada) o DPI (Dots Per Inch).
+¿Cómo producen la impresión las impresoras de impacto?,Mediante un mecanismo mecánico que golpea una cinta entintada contra el papel.
+¿Qué tipo de impresora de impacto forma los caracteres con una matriz de agujas?,Impresora matricial (dot-matrix).
+¿Qué tipo de impresora de impacto dispone los caracteres en los pétalos de una pieza metálica giratoria?,Impresora de margarita (daisy wheel).
+¿Qué componente de la impresora láser aplica calor y presión para fijar el tóner sobre el papel?,El fusor.
+¿Qué consumibles utilizan las impresoras láser?,Tóner (polvo seco).
+¿Qué tecnología de impresión no requiere tinta ni tóner al aplicar calor directo sobre papel especial?,Impresión térmica directa.
+¿Qué inconveniente principal presenta el papel utilizado en impresoras térmicas directas?,Se degrada y se oscurece con el tiempo y con la exposición al calor o la luz.
+¿Qué consumible utiliza una impresora de tecnología térmica por transferencia para fijar la imagen?,Una cinta de tinta sólida (ribbon).
+¿Qué tecnología de impresión por calor destaca por ofrecer máxima calidad fotográfica en la impresión de carnets?,Sublimación.
+¿Qué plásticos se mencionan como filamentos habituales para impresoras 3D?,PLA y ABS.
+¿Qué significan las siglas de los dispositivos de impresión MFP?,Multifunction Printer (Impresora Multifunción).
+"¿Qué tipo de escáner incorpora un cristal plano sobre el que se depositan documentos, fotos o libros?",Escáner de cama plana (flatbed).
+¿Qué significan las siglas ADF en el contexto de escáneres e impresoras multifunción?,Automatic Document Feeder (Alimentador Automático de Documentos).
+¿Qué función cumple la tecnología OCR en el proceso de digitalización de documentos?,Reconoce y convierte el texto impreso en texto digital editable.
+¿Qué cuatro componentes constituyen la estructura interna de un disco duro mecánico (HDD)?,"Platos metálicos magnéticos, cabezas lectoras/escritoras en brazo mecánico, motor de rotación y controlador electrónico."
+¿A qué velocidades de rotación en RPM giran habitualmente los platos de los discos duros magnéticos?,Entre 5.400 y 10.000 RPM.
+¿Qué es una pista en la estructura lógica de un plato de HDD?,Una circunferencia concéntrica en una de las caras del plato.
+¿Qué es un cilindro en un disco duro mecánico?,El conjunto de pistas alineadas verticalmente en la misma posición a través de todos los platos del disco.
+¿Qué es un clúster en el almacenamiento en disco?,Una agrupación de sectores gestionada directamente por el sistema de archivos.
+¿Cuál es el tamaño de sector nativo en discos duros modernos con tecnología Advanced Format?,4 KB (4.096 bytes).
+¿Qué modo de compatibilidad emplean los discos Advanced Format para simular sectores antiguos?,Modo 512e (emulación de 512 bytes).
+¿Qué tecnología de grabación magnética permite alcanzar capacidades de hasta 32 TB en discos HDD profesionales?,Tecnología HAMR.
+¿Qué tipo de memoria no volátil y sin partes móviles utiliza una unidad SSD?,Memoria flash NAND.
+¿Cuál es la velocidad de transferencia límite de un SSD con interfaz SATA III?,600 MB/s.
+¿Qué formato físico de SSD con interfaz PCIe se orienta principalmente a servidores de almacenamiento?,Formato U.2.
+"¿Cuál es la capacidad estándar de almacenamiento de un disco óptico CD-ROM, CD-R o CD-RW?",700 MB.
+¿Cuál es la capacidad estándar de un disco DVD-ROM o DVD-R de una sola capa?,"4,7 GB."
+¿Qué capacidad ofrece un disco DVD grabado en doble capa (DL)?,"8,5 GB."
+¿Qué capacidad de almacenamiento tiene un disco Blu-ray de simple capa y uno de doble capa?,25 GB en simple capa y 50 GB en doble capa.
+¿Qué capacidad máxima pueden alcanzar los discos Blu-ray regrabables de alta capacidad (BDXL)?,Hasta 128 GB.
+¿Qué nombre reciben los surcos y llanos microscópicos tallados en la superficie de un disco óptico?,Pits (pozos) y lands (llanos).
+¿Qué diferencia existe entre un formato óptico grabado como -R y uno grabado como -RW o -RE?,"El formato -R es de una sola grabación, mientras que -RW y -RE permiten ser borrados y regrabados múltiples veces."
+¿Cuál es la capacidad máxima alcanzada por las tarjetas de memoria microSD actuales citadas en el texto?,"Hasta 1,5 TB."
+¿Qué velocidad de transferencia máxima alcanza la especificación SD Express basada en el bus PCIe/NVMe?,Hasta aproximadamente 985 MB/s.
+¿Qué tecnología permite conectar memorias pendrive directamente a smartphones sin usar ordenador?,Tecnología OTG (On-The-Go).
+¿Qué sistemas de archivos son los recomendados para maximizar la compatibilidad en discos externos multiplataforma?,exFAT y FAT32.
+¿Qué significan las siglas NAS en arquitectura de almacenamiento?,Network Attached Storage.
+¿A qué nivel de abstracción de datos proporciona acceso un dispositivo NAS?,A nivel de archivo.
+¿Qué protocolo de red se utiliza principalmente en sistemas NAS para compartir archivos con clientes Windows?,SMB/CIFS.
+¿Qué protocolo de red utiliza habitualmente un servidor NAS para servir archivos a clientes Unix/Linux?,NFS (Network File System).
+¿Qué protocolo sobre HTTP permite el acceso remoto a archivos guardados en un servidor NAS?,WebDAV.
+¿Qué significan las siglas SAN en el contexto de redes de almacenamiento?,Storage Area Network.
+¿A qué nivel de datos proporciona acceso una red de almacenamiento SAN a los servidores conectados?,A nivel de bloque.
+¿Qué dos tecnologías de conectividad principales se emplean para enlazar equipos en una red SAN?,Fibre Channel (FC) e iSCSI sobre Ethernet.
+¿Cuál es la diferencia de concepto fundamental entre el acceso que proporciona un NAS y una SAN?,"NAS ofrece un sistema de archivos remoto compartido, mientras que SAN entrega volúmenes a nivel de bloque que el servidor gestiona como discos locales."
+¿Qué tecnología de pantalla utiliza iluminación independiente por cada píxel para lograr contraste perfecto?,OLED (Organic Light Emitting Diode).
+¿Qué tecnología de panel LCD destaca por ofrecer los mejores ángulos de visión y fidelidad de color?,IPS (In-Plane Switching).
+¿Qué características caracterizan a los paneles con tecnología VA (Vertical Alignment)?,"Mejor contraste que IPS y TN, con ángulos de visión y tiempo de respuesta intermedios."
+¿Cuál es la ventaja principal de los paneles de monitor con tecnología TN (Twisted Nematic)?,Bajo coste de fabricación y un tiempo de respuesta extremadamente rápido.
+¿Qué resolución en píxeles corresponde exactamente al formato HD?,1280 x 720 píxeles.
+¿Qué resolución en píxeles corresponde exactamente al estándar Full HD (FHD)?,1920 x 1080 píxeles.
+¿Qué resolución en píxeles corresponde a la norma QHD / WQHD?,2560 x 1440 píxeles.
+¿Qué resolución en píxeles corresponde al estándar 4K / UHD?,3840 x 2160 píxeles.
+¿Qué resolución en píxeles especifica el estándar 8K?,7680 x 4320 píxeles.
+¿Qué tres tecnologías de iluminación se emplean en los proyectores de vídeo según el temario?,"LCD, DLP (microespejos) y Láser."
+¿Qué tipo de micrófono se utiliza principalmente en estudios de grabación por su elevada sensibilidad?,Micrófono de condensador.
+¿En qué consiste la tecnología de interfaz háptica?,En ofrecer retroalimentación táctil al usuario para simular la sensación del tacto físico.
+¿Qué caracteriza a la tecnología de Realidad Aumentada?,Superpone elementos o información digital procesada sobre la imagen del entorno real.

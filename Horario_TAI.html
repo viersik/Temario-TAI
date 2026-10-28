@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planificador Semanal TAI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F8FAFC;
+    --card: #FFFFFF;
+    --border: #E2E8F0;
+    --text-main: #0F172A;
+    --text-muted: #64748B;
+    
+    --b1-color: #2563EB;
+    --b1-bg: #EFF6FF;
+    --b2-color: #059669;
+    --b2-bg: #ECFDF5;
+    --b3-color: #7C3AED;
+    --b3-bg: #F5F3FF;
+    --b4-color: #D97706;
+    --b4-bg: #FFFBEB;
+    
+    --rest-bg: #F1F5F9;
+    --mod-bg: #F8FAFC;
+    --input-bg: #FFFFFF;
+    --input-border: #CBD5E1;
+  }
+
+  [data-theme="dark"] {
+    --bg: #0F172A;
+    --card: #1E293B;
+    --border: #334155;
+    --text-main: #F8FAFC;
+    --text-muted: #94A3B8;
+    
+    --b1-color: #60A5FA;
+    --b1-bg: #1E3A8A;
+    --b2-color: #34D399;
+    --b2-bg: #064E3B;
+    --b3-color: #C084FC;
+    --b3-bg: #4C1D95;
+    --b4-color: #FBBF24;
+    --b4-bg: #78350F;
+    
+    --rest-bg: #0F172A;
+    --mod-bg: #1E293B;
+    --input-bg: #0F172A;
+    --input-border: #475569;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text-main);
+    padding: 24px;
+    line-height: 1.4;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto 20px;
+  }
+  .title h1 { font-size: 22px; font-weight: 700; color: var(--text-main); }
+  .title p { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+
+  .actions { display: flex; gap: 10px; }
+  .btn {
+    font-family: inherit; font-size: 13px; font-weight: 600;
+    padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--card); color: var(--text-main); cursor: pointer;
+    transition: all 0.15s ease; display: inline-flex; align-items: center; gap: 6px;
+  }
+  .btn:hover { background: var(--rest-bg); border-color: var(--border); }
+  .btn-primary { background: #2563EB; color: #FFF; border: none; }
+  .btn-primary:hover { background: #1D4ED8; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 110px repeat(5, 1fr);
+    gap: 8px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .col-header, .time-col {
+    font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--text-muted);
+    padding: 10px; text-align: center;
+  }
+  .col-header { background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+
+  .time-cell {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; font-weight: 600; color: var(--text-muted);
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 4px;
+  }
+
+  .slot {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px; display: flex; flex-direction: column; justify-content: space-between;
+    min-height: 85px; position: relative;
+  }
+  .slot-tag {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.04em; margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .slot-title { font-size: 12px; font-weight: 600; color: var(--text-main); }
+  
+  .editable-topic {
+    font-size: 12px; padding: 4px 6px; border-radius: 6px; margin-top: 6px;
+    background: var(--input-bg); border: 1px dashed var(--input-border); color: var(--text-main);
+    outline: none; transition: border-color 0.15s;
+  }
+  .editable-topic:focus { border-color: #2563EB; border-style: solid; }
+  .editable-topic:empty::before { content: attr(data-placeholder); color: var(--text-muted); font-style: italic; opacity: 0.7; }
+
+  /* Color themes por bloque */
+  .b1 { background: var(--b1-bg); border-color: var(--b1-color); }
+  .b1 .slot-tag { color: var(--b1-color); }
+  
+  .b2 { background: var(--b2-bg); border-color: var(--b2-color); }
+  .b2 .slot-tag { color: var(--b2-color); }
+
+  .b3 { background: var(--b3-bg); border-color: var(--b3-color); }
+  .b3 .slot-tag { color: var(--b3-color); }
+
+  .b4 { background: var(--b4-bg); border-color: var(--b4-color); }
+  .b4 .slot-tag { color: var(--b4-color); }
+
+  .mod-a, .mod-c { background: var(--mod-bg); border-style: dashed; }
+  .rest { background: var(--rest-bg); border-color: var(--border); align-items: center; justify-content: center; min-height: 45px; }
+  .rest .slot-title { font-size: 11px; color: var(--text-muted); font-weight: 500; }
+
+  @media print {
+    :root, [data-theme="dark"] {
+      --bg: #FFF; --card: #FFF; --border: #CBD5E1; --text-main: #000; --text-muted: #475569;
+      --b1-bg: #EFF6FF; --b1-color: #2563EB;
+      --b2-bg: #ECFDF5; --b2-color: #059669;
+      --b3-bg: #F5F3FF; --b3-color: #7C3AED;
+      --b4-bg: #FFFBEB; --b4-color: #D97706;
+      --rest-bg: #F1F5F9; --mod-bg: #FFF;
+      --input-bg: #FFF; --input-border: #94A3B8;
+    }
+    body { padding: 0; background: #FFF; color: #000; }
+    .actions { display: none; }
+    .grid { gap: 4px; }
+    .slot { min-height: 70px; padding: 6px; border-style: solid !important; }
+    .editable-topic { border: none; padding: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="title">
+    <h1>Planificador Semanal de Repasos TAI</h1>
+    <p>Haz clic en los cuadros demarcados con guiones para escribir tus temas de la semana</p>
+  </div>
+  <div class="actions">
+    <button class="btn" id="themeBtn" onclick="toggleTheme()">🌙 Modo oscuro</button>
+    <button class="btn" onclick="saveData()">💾 Guardar cambios</button>
+    <button class="btn btn-primary" onclick="window.print()">🖨️ Imprimir / PDF</button>
+  </div>
+</div>
+
+<div class="grid">
+  <!-- Encabezados -->
+  <div class="time-col">Horario</div>
+  <div class="col-header">Lunes</div>
+  <div class="col-header">Martes</div>
+  <div class="col-header">Miércoles</div>
+  <div class="col-header">Jueves</div>
+  <div class="col-header">Viernes (5º Día)</div>
+
+  <!-- 09:00 - 09:30 -->
+  <div class="time-cell">09:00 - 09:30</div>
+  <div class="slot mod-a"><div class="slot-tag">Módulo A</div><div class="slot-title">Anki / Brainscape</div></div>
+  <div class="slot mod-a"><div class="slot-tag">Módulo A</div><div class="slot-title">Anki / Brainscape</div></div>
+  <div class="slot mod-a"><div class="slot-tag">Módulo A</div><div class="slot-title">Anki / Brainscape</div></div>
+  <div class="slot mod-a"><div class="slot-tag">Módulo A</div><div class="slot-title">Anki / Brainscape</div></div>
+  <div class="slot mod-a"><div class="slot-tag">Módulo A</div><div class="slot-title">Anki / Brainscape</div></div>
+
+  <!-- 09:30 - 11:00 -->
+  <div class="time-cell">09:30 - 11:00<br><span style="font-size:9px;font-weight:normal;">(1.5h)</span></div>
+  <div class="slot b1">
+    <div class="slot-tag">Bloque I · Leyes</div>
+    <div class="slot-title">Const. / Org. Estado</div>
+    <div class="editable-topic" contenteditable="true" data-placeholder="Ej: B1_T01 Constitución" id="t1"></div>
+  </div>
+  <div class="slot b1">
+    <div class="slot-tag">Bloque I · Leyes</div>
+    <div class="slot-title">Procedimiento / TREBEP</div>
+    <div class="editable-topic" contenteditable="true" data-placeholder="Ej: B1_T04 Ley 39/2015" id="t2"></div>
+  </div>
+  <div class="slot b1">
+    <div class="slot-tag">Bloque I / Seguridad</div>
+    <div class="slot-title">ENS / LOPD-GDD</div>
+    <div class="editable-topic" contenteditable="true" data-placeholder="Ej: B1_T08 ENS" id="t3"></div>
+  </div>
+  <div class="slot b1" style="background:var(--mod-bg); border-color:#FCA5A5;">
+    <div class="slot-tag" style="color:#EF4444;">Refuerzo 🔴</div>
+    <div class="slot-title">Tema más vencido</div>
+    <div class="editable-topic" contenteditable="true" data-placeholder="Ej: B1_T02 Cortes" id="t4"></div>
+  </div>
+  <div class="slot" style="background:var(--mod-bg); border-color:#FDE68A;">
+    <div class="slot-tag" style="color:#F59E0B;">Simulacro</div>
+    <div class="slot-title">Test Arrastre Global</div>
+    <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">50-100 preguntas</div>
+  </div>
+
+  <!-- 11:00 - 11:30 -->
+  <div class="time-cell">11:00 - 11:30</div>
+  <div class="slot rest"><div class="slot-title">☕ Recreo</div></div>
+  <div class="slot rest"><div class="slot-title">☕ Recreo</div></div>
+  <div class="slot rest"><div class="slot-title">☕ Recreo</div></div>
+  <div class="slot rest"><div class="slot-title">☕ Recreo</div></div>
+  <div class="slot rest"><div class="slot-title">☕ Recreo</div></div>
+
+  <!-- 11:30 - 12:30 -->
+  <div class="time-cell">11:30 - 12:30<br><span style="font-size:9px;font-weight:normal;">(1h)</span></div>
+  <div class="slot b2">
+    <div class="slot-tag">Bloque II · Sistemas</div>
+    <div class="slot-title">Hardware / Admin SO</div>
+    <div class="editable-topic" contenteditable="true" data-placeholder="Ej: B2_T01 Hardware" id="t5"></div>
+  </div>
+  <div class="slot b3">
+    <div class="slot-tag">Bloque III · Dev/BD</div>
+    <div class="slot-title">Bases de Datos / SQL</div>
+    <div class="editable-topic" contenteditable="true" data-placeholder="Ej: B3_T02 SQL" id="t6"></div>
+  </div>
+  <div class="slot b4">
+    <div class="slot-tag">Bloque IV · Redes</div>
+    <div class="slot-title">Redes y Protocolos</div>
+    <div class="editable-topic" contenteditable="true" data-placeholder="Ej: B4_T03 TCP/IP" id="t7"></div>
+  </div>
+  <div class="slot mod-a">
+    <div class="slot-tag">Test Temático</div>
+    <div class="slot-title">Batería rápida</div>
+    <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">30-40 preguntas</div>
+  </div>
+  <div class="slot mod-a">
+    <div class="slot-tag">Análisis</div>
+    <div class="slot-title">Macro-repaso</div>
+    <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">Análisis de fallos</div>
+  </div>
+
+  <!-- 12:30 - 13:00 -->
+  <div class="time-cell">12:30 - 13:00</div>
+  <div class="slot mod-c"><div class="slot-tag">Módulo C</div><div class="slot-title">Parcheo y JSON</div></div>
+  <div class="slot mod-c"><div class="slot-tag">Módulo C</div><div class="slot-title">Parcheo y JSON</div></div>
+  <div class="slot mod-c"><div class="slot-tag">Módulo C</div><div class="slot-title">Parcheo y JSON</div></div>
+  <div class="slot mod-c"><div class="slot-tag">Módulo C</div><div class="slot-title">Parcheo y JSON</div></div>
+  <div class="slot mod-c"><div class="slot-tag">Módulo C</div><div class="slot-title">Registro Final</div></div>
+
+  <!-- Pausa Comida -->
+  <div class="time-cell">13:00 - 16:00</div>
+  <div class="slot rest" style="grid-column: span 5;"><div class="slot-title">🥪 Comida, Descanso y Desconexión Mental</div></div>
+
+  <!-- 16:00 - 17:15 -->
+  <div class="time-cell">16:00 - 17:15<br><span style="font-size:9px;font-weight:normal;">(1h 15m)</span></div>
+  <div class="slot"><div class="slot-tag">Test Activo</div><div class="slot-title">50 preg. Bloque I/II</div></div>
+  <div class="slot"><div class="slot-tag">Test Activo</div><div class="slot-title">50 preg. Bloque I/III</div></div>
+  <div class="slot"><div class="slot-tag">Test Activo</div><div class="slot-title">50 preg. Bloque I/IV</div></div>
+  <div class="slot"><div class="slot-tag">Test Activo</div><div class="slot-title">50 preg. Temas Rojos</div></div>
+  <div class="slot"><div class="slot-tag">Parcheo Global</div><div class="slot-title">Revisión Simulacro</div></div>
+
+  <!-- 17:15 - 17:30 -->
+  <div class="time-cell">17:15 - 17:30</div>
+  <div class="slot rest"><div class="slot-title">☕ Pausa</div></div>
+  <div class="slot rest"><div class="slot-title">☕ Pausa</div></div>
+  <div class="slot rest"><div class="slot-title">☕ Pausa</div></div>
+  <div class="slot rest"><div class="slot-title">☕ Pausa</div></div>
+  <div class="slot rest"><div class="slot-title">☕ Pausa</div></div>
+
+  <!-- 17:30 - 19:00 -->
+  <div class="time-cell">17:30 - 19:00<br><span style="font-size:9px;font-weight:normal;">(1.5h)</span></div>
+  <div class="slot mod-c"><div class="slot-tag">Parcheo & Anki</div><div class="slot-title">Corrección e ingesta</div></div>
+  <div class="slot mod-c"><div class="slot-tag">Parcheo & Anki</div><div class="slot-title">Corrección e ingesta</div></div>
+  <div class="slot mod-c"><div class="slot-tag">Parcheo & Anki</div><div class="slot-title">Corrección e ingesta</div></div>
+  <div class="slot mod-c"><div class="slot-tag">Parcheo & Anki</div><div class="slot-title">Corrección e ingesta</div></div>
+  <div class="slot mod-c"><div class="slot-tag">Ajuste Semanal</div><div class="slot-title">Actualización Matriz</div></div>
+</div>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const btn = document.getElementById('themeBtn');
+    if (html.getAttribute('data-theme') === 'dark') {
+      html.removeAttribute('data-theme');
+      btn.innerText = '🌙 Modo oscuro';
+      localStorage.setItem('tai_theme', 'light');
+    } else {
+      html.setAttribute('data-theme', 'dark');
+      btn.innerText = '☀️ Modo claro';
+      localStorage.setItem('tai_theme', 'dark');
+    }
+  }
+
+  function saveData() {
+    const ids = ['t1','t2','t3','t4','t5','t6','t7'];
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if(el) localStorage.setItem('tai_' + id, el.innerText);
+    });
+    alert('¡Planificación guardada en el navegador!');
+  }
+
+  function loadData() {
+    // Carga de Tema Claro/Oscuro
+    const savedTheme = localStorage.getItem('tai_theme');
+    const btn = document.getElementById('themeBtn');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      btn.innerText = '☀️ Modo claro';
+    }
+
+    // Carga de Textos
+    const ids = ['t1','t2','t3','t4','t5','t6','t7'];
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      const val = localStorage.getItem('tai_' + id);
+      if(el && val) el.innerText = val;
+    });
+  }
+
+  window.onload = loadData;
+</script>
+</body>
+</html>

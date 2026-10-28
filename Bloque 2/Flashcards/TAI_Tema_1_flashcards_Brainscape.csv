@@ -1,0 +1,142 @@
+¿Qué es la informática?,Ciencia que estudia el tratamiento automático de la información mediante sistemas computacionales.
+¿De qué palabras procede el término informática?,De información y automática.
+¿Cuáles son los objetivos fundamentales de la informática?,"Procesamiento eficiente de datos, automatización de tareas, optimización de procesos, comunicación de la información y almacenamiento y recuperación de datos."
+¿Cuáles son las generaciones de ordenadores y su tecnología base?,1ª 1940-1956: válvulas de vacío; 2ª 1956-1964: transistores; 3ª 1964-1971: circuitos integrados; 4ª 1971-presente: microprocesadores; 5ª actualidad: inteligencia artificial.
+¿Qué caracteriza a la primera generación de ordenadores?,"Válvulas de vacío, tarjetas perforadas, lenguaje máquina y gran tamaño y consumo; ejemplo: ENIAC."
+¿Qué caracteriza a la segunda generación de ordenadores?,"Transistores, mayor fiabilidad y menor tamaño y consumo; aparecen lenguajes de alto nivel como COBOL y FORTRAN."
+¿Qué caracteriza a la tercera generación de ordenadores?,"Circuitos integrados, generalización de sistemas operativos y multiprogramación, con menor tamaño y mayor rendimiento."
+¿Qué caracteriza a la cuarta generación de ordenadores?,"Microprocesadores, popularización del PC, software comercial, sistemas gráficos y redes."
+¿Qué caracteriza a la quinta generación según el tema?,"Desarrollo de IA y aprendizaje automático, IoT, nube, realidad aumentada, automatización inteligente y áreas como computación cuántica."
+¿Qué es un bit y qué valores puede representar?,Es la unidad básica de información y puede representar 0 o 1.
+¿Cuántos bits forman un byte y cuántos valores puede representar?,"8 bits; 256 valores, de 0 a 255."
+"¿Cuál es la equivalencia de las unidades KB, MB, GB, TB, PB, EB, ZB y YB?",Cada unidad equivale a 1.024 unidades de la inmediatamente anterior: 1 KB=1.024 B; 1 MB=1.024 KB; 1 GB=1.024 MB; 1 TB=1.024 GB; 1 PB=1.024 TB; 1 EB=1.024 PB; 1 ZB=1.024 EB; 1 YB=1.024 ZB.
+"¿Qué bases utilizan los sistemas decimal, binario, octal y hexadecimal?",Decimal: base 10; binario: base 2; octal: base 8; hexadecimal: base 16.
+¿Qué dígitos utiliza cada sistema de numeración?,Decimal: 0-9; binario: 0-1; octal: 0-7; hexadecimal: 0-9 y A-F.
+¿Cómo se convierte un decimal a binario?,"Mediante divisiones sucesivas entre 2, anotando los restos y leyéndolos en orden inverso."
+¿Cómo se convierte un binario a decimal?,Multiplicando cada bit por la potencia de 2 correspondiente a su posición y sumando los resultados.
+¿Cuántos caracteres codifica ASCII y cuántos alcanza ASCII extendido según el tema?,ASCII codifica 128 caracteres; ASCII-8 alcanza 256.
+¿Qué caracteriza a Unicode y qué versión indica el tema?,Es un estándar universal para más de 159.000 caracteres; el tema indica la versión 17.0 de 2025.
+¿Cuántos bytes utiliza UTF-8 por carácter?,De 1 a 4 bytes; es compatible con ASCII.
+¿Cuántos bytes utiliza UTF-16 y UTF-32?,UTF-16 utiliza 2 o 4 bytes; UTF-32 utiliza siempre 4 bytes.
+¿Qué son las imágenes bitmap?,Imágenes formadas por una matriz de píxeles; su resolución depende de anchura por altura y pierden calidad al escalarse.
+"¿Qué profundidad de color corresponde a 8, 24 y 32 bits por píxel?",8 bits: 256 colores; 24 bits: color verdadero con 8 bits por canal RGB; 32 bits: incluye canal alfa.
+¿Qué diferencia fundamental existe entre imágenes bitmap y vectoriales?,Las bitmap usan píxeles y pierden calidad al escalar; las vectoriales usan elementos geométricos definidos matemáticamente y son escalables sin pérdida.
+¿Qué formatos vectoriales menciona el tema?,SVG y EPS.
+¿Qué significan RGB y CMYK y dónde se utilizan?,RGB es un modelo aditivo usado en pantallas; CMYK es sustractivo y se usa en impresión.
+¿Qué es la profundidad de color?,Número de bits utilizados por píxel para representar el color.
+¿Qué es la resolución de una imagen?,Número total de píxeles de la imagen; el tema indica que no se mide en bits.
+¿Qué formatos de imagen destacan por compresión y transparencia?,JPEG: con pérdida y sin transparencia; PNG: sin pérdida y con transparencia; BMP: sin compresión y sin transparencia.
+¿Qué es la frecuencia de muestreo del sonido?,"Número de muestras tomadas por segundo, expresado en Hz; 44.100 Hz es el estándar de audio en CD."
+¿Qué es la resolución de cuantificación del sonido?,Número de bits usados para representar cada muestra; el tema pone 16 bits por muestra como ejemplo.
+"¿Qué formatos de audio son sin compresión, con pérdida y sin pérdida?","Sin compresión: WAV y AIFF; con pérdida: MP3, AAC y OGG; sin pérdida: FLAC, ALAC y APE."
+¿Qué es un códec de vídeo?,Software que comprime y descomprime vídeo.
+¿Qué códecs de vídeo menciona el tema?,"H.264, H.265/HEVC, VP9 y AV1."
+"¿Qué valores de fps se asocian a cine, TV y vídeo/juegos?","24 fps para cine, 30 fps para TV y 60 fps para juegos o vídeo fluido."
+¿Qué es un formato contenedor de vídeo y cuáles se mencionan?,"Agrupa vídeo, audio, subtítulos y metadatos en un archivo; ejemplos: MP4, MKV, AVI y MOV."
+¿Qué diferencia existe entre compresión con pérdida y sin pérdida?,La compresión con pérdida elimina permanentemente parte de los datos; la sin pérdida permite recuperar exactamente la información original.
+¿Qué algoritmos de compresión sin pérdida menciona el tema?,"RLE, Huffman, LZW y predictiva."
+¿Qué algoritmo de compresión se asocia a JPEG?,"DCT, Transformada del Coseno, con pérdida."
+¿Qué algoritmo se asocia a JPEG2000?,Wavelet o DWT.
+¿Qué formatos se mencionan como comunes con pérdida?,"JPEG, MP3, AAC, MP4, WebP y OGG."
+¿Qué formatos se mencionan como comunes sin pérdida?,"PNG, FLAC, ALAC, ZIP, GZIP, 7Z y TIFF."
+¿Qué es un sistema de información?,"Conjunto organizado e interrelacionado de elementos humanos, tecnológicos y procedimentales que capta, almacena, procesa, analiza y distribuye información para facilitar decisiones y control."
+¿Cuáles son los componentes básicos de un sistema de información?,"Datos, procesos, tecnología y comunicaciones."
+¿Qué tipos de sistemas de información aparecen según el nivel jerárquico?,"TPS, MIS, DSS y EIS."
+¿Qué finalidad tiene un TPS?,"Automatizar tareas rutinarias como registros, nóminas o ventas; sirve al personal operativo."
+¿Qué finalidad tiene un MIS?,Ofrecer informes periódicos y resúmenes para apoyar a la gestión intermedia.
+¿Qué finalidad tiene un DSS?,Facilitar decisiones no estructuradas mediante análisis de escenarios y modelos.
+¿Qué finalidad tiene un EIS?,Ofrecer indicadores clave y visualización de alto nivel para la alta dirección.
+"¿Qué significan ERP, BI y KM?",ERP: Enterprise Resource Planning; BI: Business Intelligence; KM: Knowledge Management.
+¿Qué fases del ciclo de vida de un sistema de información enumera el tema?,Estudio preliminar y viabilidad; análisis; diseño; implementación/desarrollo; pruebas; despliegue/puesta en marcha; mantenimiento y evolución.
+¿Qué tipos de mantenimiento distingue el tema?,"Correctivo, adaptativo y evolutivo."
+¿Cuál es la fase más larga del ciclo de vida según el tema?,Mantenimiento y evolución.
+¿Qué es la arquitectura de ordenadores?,Disciplina que estudia la estructura interna y el funcionamiento lógico de los sistemas informáticos.
+¿Cuáles son los tres niveles de arquitectura indicados?,"Nivel lógico o conceptual, nivel organizativo o microarquitectura y nivel físico o hardware."
+¿Qué define el nivel lógico o conceptual?,"Cómo el procesador interpreta y ejecuta instrucciones, incluyendo ISA, modos de direccionamiento y tipos de datos."
+¿Qué describe la microarquitectura?,"Cómo están implementados los componentes internos, como registros, buses, cachés y unidades de ejecución."
+¿Qué es la arquitectura Von Neumann?,"Modelo de computadora basado en programa almacenado, donde instrucciones y datos residen en la misma memoria."
+¿Cuándo fue propuesta la arquitectura Von Neumann según el tema?,En 1945.
+¿Cuáles son los cinco bloques fundamentales de Von Neumann?,"Unidad de entrada, unidad de salida, memoria principal, unidad de control y unidad aritmético-lógica."
+¿Cuáles son los tres buses principales de Von Neumann?,"Bus de datos, bus de direcciones y bus de control."
+¿Qué función tiene el bus de datos?,"Transportar los datos entre procesador, memoria y periféricos; es bidireccional."
+¿Qué función tiene el bus de direcciones?,Indicar la dirección de memoria donde se leen o escriben datos; generalmente es unidireccional.
+¿Qué función tiene el bus de control?,"Transmitir señales de control y sincronización como lectura, escritura e interrupciones."
+¿Qué es la CPU y cuáles son sus componentes principales?,Es la unidad que interpreta y ejecuta instrucciones y coordina el sistema; sus componentes principales son CU y ALU.
+¿Qué funciones realiza la CU?,"Interpreta instrucciones, genera señales de control, coordina el flujo de datos y gestiona saltos, interrupciones y ciclos de reloj."
+¿Qué operaciones realiza la ALU?,"Operaciones aritméticas, lógicas, comparaciones y desplazamientos o rotaciones de bits."
+¿Qué son los registros y cuáles son los principales?,"Memoria ultrarrápida integrada en la CPU; destacan PC, IR, acumulador, registros de propósito general y registro de estado."
+¿Qué contiene el PC?,La dirección de la próxima instrucción a ejecutar.
+¿Qué contiene el IR?,La instrucción actual que está siendo decodificada y ejecutada.
+¿Qué mide la frecuencia del reloj y qué significa 3 GHz?,La frecuencia se mide en Hz/GHz; 3 GHz son 3.000 millones de ciclos por segundo.
+¿Cuáles son las tres fases básicas del ciclo de ejecución de la CPU?,"Fetch, Decode y Execute."
+¿Qué es FLOPS?,Floating Point Operations Per Second: número de operaciones aritméticas en coma flotante que pueden realizarse por segundo.
+¿Qué es la memoria RAM?,"Memoria principal, volátil, de acceso aleatorio, utilizada temporalmente para programas y datos en ejecución."
+¿Qué diferencia básica existe entre DRAM y SRAM?,"DRAM necesita refresco y es más barata y lenta; SRAM no necesita refresco, es más rápida y cara y se usa como caché."
+¿Cuál es la jerarquía de memoria indicada?,"Registros, caché, RAM, almacenamiento secundario y almacenamiento terciario."
+"¿Qué caracteriza a L1, L2 y L3?",L1 es la más rápida y pequeña; L2 es mayor y algo más lenta; L3 es mayor y puede compartirse entre núcleos.
+¿Qué es la ROM?,Memoria no volátil destinada a almacenar instrucciones permanentes y firmware.
+¿Qué variantes de ROM se mencionan?,"PROM, EPROM, EEPROM y Flash ROM, además de ROM convencional."
+"¿Cómo se diferencia PROM, EPROM y EEPROM?",PROM se programa una vez; EPROM se borra con luz ultravioleta y se reprograma; EEPROM se borra y reescribe eléctricamente.
+¿Qué son los buses y cuáles son sus características técnicas clave?,"Son vías de comunicación entre componentes; destacan ancho del bus, frecuencia y topología."
+¿Qué determina el ancho de un bus de datos?,La cantidad de bits que puede transmitir simultáneamente por ciclo.
+¿Qué generaciones de PCI Express y velocidades indica el tema?,PCIe 3.0: 8 GT/s por carril; PCIe 4.0: 16 GT/s; PCIe 5.0: 32 GT/s; PCIe 6.0: 64 GT/s.
+"¿Qué son los periféricos de entrada, salida y mixtos?",Entrada recibe datos; salida muestra resultados; mixtos pueden recibir y enviar datos.
+¿Cuáles son los tres mecanismos principales de gestión de E/S?,"E/S programada, E/S mediante interrupciones y DMA."
+"¿Qué diferencia hay entre E/S programada, interrupciones y DMA?",En la programada la CPU controla y espera; con interrupciones el periférico avisa a la CPU; con DMA el periférico transfiere directamente a memoria y la CPU configura el controlador.
+¿Qué significa DMA?,"Direct Memory Access, Acceso Directo a Memoria."
+¿Qué diferencia existe entre transmisión serie y paralela?,La paralela transmite varios bits simultáneamente por varias líneas; la serie transmite los bits uno a uno por una línea o pocas.
+¿Qué interfaces aparecen como serie activas para almacenamiento o periféricos?,"SATA, SAS, NVMe, M.2, U.2, USB y Thunderbolt."
+¿Qué es un controlador de dispositivo?,Componente que actúa de intermediario entre CPU/adaptador y periférico y traduce órdenes y respuestas.
+¿Qué es un driver?,Software que actúa como interfaz entre el sistema operativo y el controlador físico del hardware.
+¿Qué velocidades máximas de USB recoge el tema?,USB 2.0: 480 Mbps; USB 3.0: 5 Gbps; USB 3.1 Gen 2: 10 Gbps; USB 3.2 Gen 2x2: 20 Gbps; USB4: 40 Gbps; USB4 2.0: 80 Gbps y hasta 120 Gbps en modo asimétrico.
+¿Qué conector requiere USB 3.2 Gen 2x2 según el tema?,USB-C.
+¿Qué conector requiere USB4/USB 4.0 según el tema?,USB-C.
+¿Qué es la taxonomía de Flynn y qué cuatro categorías establece?,"Clasifica arquitecturas según flujos de instrucciones y datos; SISD, SIMD, MISD y MIMD."
+"¿Qué significan SISD, SIMD, MISD y MIMD?",Single Instruction Single Data; Single Instruction Multiple Data; Multiple Instruction Single Data; Multiple Instruction Multiple Data.
+¿Qué caracteriza a CISC?,"Conjunto amplio y complejo de instrucciones, longitud variable, microprogramación, código máquina compacto y hardware más complejo."
+¿Qué caracteriza a RISC?,"Conjunto reducido y sencillo, instrucciones normalmente de un ciclo, longitud fija, más registros y favorece el pipelining."
+¿Qué ejemplos de arquitecturas RISC menciona el tema?,"ARM, MIPS, SPARC, PowerPC y RISC-V."
+¿Qué es la arquitectura Harvard?,"Modelo en el que instrucciones y datos están en memorias físicas separadas, cada una con su propio bus."
+¿Qué diferencia Harvard de Von Neumann?,Harvard separa físicamente memoria y buses de instrucciones y datos; Von Neumann comparte memoria para ambos.
+¿Qué es la arquitectura Harvard modificada descrita?,"Modelo híbrido en el que la caché L1 se separa en instrucciones y datos, mientras la RAM permanece unificada."
+¿Qué es la placa base?,"Circuito impreso central que conecta procesador, memoria, almacenamiento, tarjetas de expansión y periféricos."
+¿Qué función cumple el chipset moderno o PCH?,"Gestionar conexiones como USB, SATA/NVMe, sonido, red y expansión secundaria; parte del controlador de memoria, PCIe y gráficos suele estar integrada en la CPU."
+¿Cuáles son los principales factores de forma de placa base y sus tamaños aproximados?,"ATX 30,5 × 24,4 cm; Micro-ATX 24,4 × 24,4 cm; Mini-ITX 17 × 17 cm; E-ATX 30,5 × 33 cm."
+¿Qué características del microprocesador destaca el tema?,"Velocidad de reloj, número de núcleos, caché, ISA e hiperprocesamiento."
+¿Qué es Hyper-Threading según el tema?,Tecnología que permite que un núcleo físico ejecute dos hilos lógicos simultáneamente.
+¿Qué familias de procesadores menciona el tema por fabricante?,"Intel: Core Ultra y Xeon; AMD: Ryzen, Athlon, Threadripper y EPYC; ARM: principalmente móviles y embebidos."
+¿Qué tipos de procesadores aparecen según el número de núcleos?,"Single-core, dual-core, quad-core y hexa-core y superiores."
+¿Qué tipos de RAM y características destaca el tema?,"DRAM, SRAM, SDRAM, DDR y ECC."
+¿Qué significa DDR y qué versiones actuales menciona el tema?,Double Data Rate; DDR4 y DDR5.
+¿Qué es ECC en memoria RAM?,Error-Correcting Code; detecta y corrige errores y se usa en servidores y estaciones críticas.
+¿Qué diferencia física básica hay entre DIMM y SO-DIMM?,DIMM es el formato estándar de sobremesa; SO-DIMM es una versión reducida para portátiles y equipos compactos.
+¿Qué valores técnicos de DIMM DDR4/DDR5 recoge el tema?,"Longitud aproximada 133 mm; 288 pines para DDR4/DDR5; 1,2 V DDR4 y 1,1 V DDR5; 4-64 GB por módulo."
+¿Qué valores técnicos de SO-DIMM DDR4/DDR5 recoge el tema?,"Longitud aproximada 67 mm; 262 pines DDR5, 260 DDR4; 1,2 V DDR4 y 1,1 V DDR5; 4-32 GB por módulo."
+¿Qué tipos de ROM y función aparecen en la comparativa?,"ROM/PROM/EPROM/EEPROM/Flash; almacenan firmware y son no volátiles, frente a la RAM que es volátil y de lectura/escritura."
+¿Qué indica el tema sobre la ROM-CMOS?,"Guarda configuración básica como orden de arranque, fecha, hora y parámetros del hardware; indica normalmente menos de 512 bytes y batería CR2032."
+¿Qué es un HDD?,Dispositivo de almacenamiento no volátil con platos magnéticos giratorios y cabezales de lectura/escritura.
+¿Qué componentes principales tiene un HDD?,"Platos, cabezas lectoras/escritoras, actuador, eje, motor de giro y controlador."
+¿Qué velocidades de giro típicas menciona el tema para HDD?,5.400 o 7.200 RPM.
+"¿Qué son pista, sector, cilindro y clúster en un HDD?",Pista: circunferencia concéntrica; sector: unidad mínima de almacenamiento; cilindro: pistas alineadas verticalmente entre platos; clúster: agrupación de sectores tratada como unidad lógica por el sistema operativo.
+¿Qué tamaños de sector menciona el tema?,"512 bytes o 4.096 bytes, equivalentes a 4 KB."
+¿Qué es un SSD?,Unidad de estado sólido que utiliza memoria flash y no tiene partes móviles.
+¿Qué diferencia fundamental hay entre HDD y SSD?,HDD usa tecnología mecánica con platos giratorios; SSD usa memoria flash electrónica y ofrece mayor velocidad y resistencia a golpes.
+¿Qué tipos de memoria flash SSD aparecen y cómo se ordenan por velocidad y durabilidad?,SLC: muy alta; MLC: alta; TLC: media; QLC: baja. La durabilidad también disminuye de SLC a QLC según la tabla del tema.
+¿Qué interfaces SSD menciona el tema?,"SATA III, M.2 SATA, M.2 NVMe, U.2, PCIe y SAS."
+¿Qué velocidad máxima indica el tema para SATA III en SSD?,Hasta 600 MB/s.
+"¿Qué velocidades aproximadas indica para M.2 NVMe en PCIe 3.0, 4.0 y 5.0?","Aproximadamente 3.500 MB/s, 7.000 MB/s y 14.000 MB/s respectivamente."
+¿Qué velocidad y característica de SAS destaca el tema?,"Hasta 12 Gbps; interfaz de alto rendimiento para entornos profesionales y servidores, con soporte para discos dual-port."
+¿Qué capacidades aproximadas de medios ópticos aparecen?,"CD: 700 MB; DVD: 4,7 GB, hasta 8,5 GB doble capa; Blu-ray: 25-100 GB."
+¿Qué es una tarjeta gráfica y qué es VRAM?,La GPU procesa y genera imágenes; la VRAM es la memoria dedicada de vídeo.
+¿Qué tipos de tarjetas gráficas distingue el tema?,"Integradas, dedicadas y profesionales."
+¿Qué función cumple una tarjeta de sonido?,Convierte señales digitales en analógicas para salida y señales analógicas en digitales para entrada; las dedicadas ofrecen funciones y calidad superiores.
+¿Qué función cumple una NIC?,Permite conectar el ordenador a redes LAN o Internet.
+¿Qué estándares Wi-Fi menciona el tema?,"Wi-Fi 5 802.11ac, Wi-Fi 6 802.11ax, Wi-Fi 6E con banda de 6 GHz y Wi-Fi 7 802.11be."
+"¿Qué diferencia principal hay entre las bandas Wi-Fi de 2,4 y 5 GHz?","2,4 GHz ofrece mayor alcance y penetración pero menor velocidad y más interferencias; 5 GHz ofrece mayor velocidad y menor congestión pero menor alcance y penetración."
+¿Qué es una fuente de alimentación o PSU?,Componente que convierte corriente alterna de la red en corriente continua para los componentes del ordenador.
+¿Qué potencias habituales de fuente de alimentación indica el tema?,Entre 400 W y 1.000 W.
+¿Qué formatos de fuente de alimentación menciona?,"ATX, SFX y TFX."
+¿Cuáles son los niveles 80 PLUS?,"White, Bronze, Silver, Gold, Platinum y Titanium."
+¿Qué conectores de alimentación comunes enumera el tema?,ATX de 24 pines para placa base; EPS de 4/8 pines para CPU; PCIe de 6/8 pines para gráficas; SATA y Molex para discos y periféricos.
+¿Qué conector de alimentación de GPU de gama alta menciona el tema?,"12V-2x6, revisión del anterior 12VHPWR."
+¿Qué es ATX12VO según el tema?,Estándar alternativo al ATX tradicional impulsado por Intel que simplifica el cableado distribuyendo únicamente 12 V a los componentes.

@@ -1,0 +1,102 @@
+Que es un Tipo Abstracto de Datos (TAD) según la definición conceptual?,"Un modelo matemático que describe un conjunto de datos y las operaciones válidas sobre ellos, independientemente de su implementación concreta en un lenguaje de programación o en una máquina."
+Por que se califica de abstracto a un Tipo Abstracto de Datos (TAD)?,"Porque define que operaciones se pueden realizar sobre los datos y que comportamiento se espera de ellas, sin entrar en los detalles de como se llevan a cabo."
+Cuales son las 4 características principales de un Tipo Abstracto de Datos (TAD)?,"Encapsulamiento, Interfaz definida, Independencia de implementación y Consistencia lógica."
+"En un TAD, en que consiste la característica de Encapsulamiento?","Los datos y las operaciones están agrupados, y se oculta su implementación interna."
+"En un TAD, en que consiste la característica de Interfaz definida?","Se especifican claramente las operaciones permitidas (inserción, borrado, búsqueda, etc.)."
+"En un TAD, en que consiste la característica de Independencia de implementación?","Un mismo TAD puede implementarse de formas distintas (con arrays, listas, punteros, etc.)."
+"En un TAD, en que consiste la característica de Consistencia lógica?","El comportamiento esperado de las operaciones debe mantenerse, sin importar como estén implementadas."
+Cuales son las 5 ventajas del uso de Tipos Abstractos de Datos en el desarrollo de programas?,"Modularidad, Mantenibilidad, Reutilización, Legibilidad y claridad, y Facilita la verificación."
+Que diferencia conceptual existe entre la Interfaz y la Implementación de un TAD?,La interfaz describe que operaciones se pueden hacer y su comportamiento sin especificar como se realizan; la implementación define como se ejecutan internamente según la estructura de datos o lenguaje.
+Que diferencia una estructura de datos estática de una dinámica respecto al tiempo de compilación y ejecución?,La estática tiene un tamaño fijo definido en tiempo de compilación; la dinámica puede cambiar de tamaño durante la ejecución del programa.
+Cual es la definición formal de una estructura de datos lineal?,"Aquella que organiza los elementos en una secuencia donde cada elemento tiene un único anterior y un único siguiente, salvo el primero y el último."
+"Como se clasifican las estructuras de datos según la forma de organizar sus elementos entre lineales, no lineales y de acceso directo?","Lineales (secuenciales como listas, pilas y colas), No lineales (jerárquicas o en red como árboles y grafos) y De acceso directo (localización por clave como tablas hash y diccionarios)."
+Cual es la diferencia estructural entre un array y una lista respecto a la capacidad de crecimiento?,"El array tiene un tamaño fijo definido en su creación, mientras que la lista puede crecer dinámicamente."
+Cuales son los dos campos básicos que componen un nodo en una lista simplemente enlazada?,Un campo de datos y un campo de enlace (puntero) que señala al siguiente nodo.
+A que valor apunta el puntero del último nodo en una lista simplemente enlazada no circular?,A null o None.
+Cual es la limitación de dirección de recorrido en una lista simplemente enlazada?,El recorrido solo se puede realizar en una dirección (de izquierda a derecha).
+Cuales son los campos de puntero que contiene cada nodo en una lista doblemente enlazada?,Un puntero al nodo anterior y un puntero al nodo siguiente.
+Cual es la ventaja principal de una lista doblemente enlazada frente a una simple al eliminar nodos intermedios?,Facilita la eliminación de nodos intermedios sin necesidad de recorrer toda la lista para encontrar el nodo anterior.
+A que nodo apunta el puntero del último nodo en una lista simplemente enlazada circular?,"Apunta al primer nodo de la lista, formando un bucle cerrado."
+"En una lista circular doblemente enlazada, a que nodos apuntan los extremos de la lista?","El último nodo apunta al primero, y el primer nodo apunta al último."
+Bajo que principio de ordenación de datos funciona una Pila (Stack)?,"LIFO (Last In, First Out: el último elemento en entrar es el primero en salir)."
+Como se denomina el único extremo por el que se realizan las operaciones en una pila?,Top (o tope).
+Que error de ejecución se produce cuando se intenta insertar un elemento en una pila estática que esta llena?,Desbordamiento de pila (stack overflow).
+Cual es la diferencia fundamental en la limitación de tamaño entre una pila estática y una pila dinámica?,La pila estática usa un array de tamaño fijo conocido de antemano; la pila dinámica usa una lista enlazada y no tiene límite de tamaño salvo la memoria disponible.
+Que realiza la operación pop() en una pila?,Elimina y devuelve el elemento que está en el tope de la pila.
+Que realiza la operación peek() o top() en una pila?,Devuelve el elemento en el tope de la pila sin eliminarlo.
+Bajo que principio de ordenación de datos funciona una Cola (Queue)?,"FIFO (First In, First Out: el primer elemento en entrar es el primero en salir)."
+Como se denominan las dos operaciones principales de inserción y eliminación en una cola simple y en que extremos se realizan?,Inserción (enqueue) al final y eliminación (dequeue) al principio.
+Cual es la utilidad principal de una cola circular cuando se implementa mediante un array fijo?,Permite reaprovechar las posiciones vacías del array al unir los extremos en un ciclo lógico.
+Como determina una cola con prioridad (Priority Queue) el orden de extracción de sus elementos?,"Extrae el elemento con mayor prioridad asociada, independientemente de su orden de entrada."
+Que es una doble cola (Deque) restringida de entrada (input-restricted)?,"Una doble cola donde la inserción solo se permite por un extremo, pero la eliminación se permite por ambos extremos."
+Que es una doble cola (Deque) restringida de salida (output-restricted)?,"Una doble cola donde la eliminación solo se permite por un extremo, pero la inserción se permite por ambos extremos."
+"En la terminología de árboles, como se define la Altura de un nodo?",La longitud del camino más largo desde ese nodo hasta una hoja.
+"En la terminología de árboles, como se define la Profundidad de un nodo?",El número de niveles desde la raíz hasta ese nodo.
+Como se define formalmente un nodo hoja en un árbol?,Un nodo terminal que no tiene ningún hijo.
+Cual es la condición que define a un Árbol Binario de Búsqueda (BST)?,"Los valores del subárbol izquierdo de un nodo son menores que el valor del nodo, y los valores del subárbol derecho son mayores."
+Cual es la condición de balanceo que define a un Árbol AVL?,Es un BST autoequilibrado donde la diferencia de altura entre los subárboles izquierdo y derecho de cualquier nodo es como máximo 1.
+Cuales son las 3 reglas de coloreado y estructura que definen a un Árbol Rojo-Negro (Red-Black Tree)?,"La raíz es siempre negra, ningún nodo rojo puede tener un hijo rojo, y todo camino desde la raíz hasta una hoja nula contiene el mismo número de nodos negros."
+"Cual es la complejidad temporal en el peor caso para inserción, búsqueda y borrado en un Árbol Rojo-Negro?",O(log n).
+Que estructuras estándar de C++ y Java implementan internamente un Árbol Rojo-Negro?,"std::map y std::set en C++, y TreeMap y TreeSet en Java."
+Cuales son las 3 características estructurales de un Árbol B de orden m?,"Cada nodo puede tener como máximo m hijos, todos los datos se almacenan en nodos internos y hojas, y todas las hojas están siempre al mismo nivel."
+Cuales son las 2 diferencias clave entre un Árbol B+ y un Árbol B tradicional?,"En el Árbol B+ los datos solo se almacenan en las hojas, y las hojas están enlazadas secuencialmente entre sí."
+Como representa la información un Árbol Trie (árbol de prefijo)?,Cada nodo representa un carácter y cada camino desde la raíz hasta un nodo marcado como fin de palabra representa una palabra completa.
+"En un Árbol Trie, es necesario que un fin de palabra sea un nodo hoja?","No, un nodo marcado como fin de palabra puede ser un nodo interno si una palabra es prefijo de otra (por ejemplo 'sol' y 'solo')."
+Como se define el Grado de un vértice en un grafo?,El número de aristas que inciden en el.
+Que diferencia la representación formal de una arista en un grafo dirigido frente a uno no dirigido?,"En el dirigido se representa como par ordenado (A a B), mientras que en el no dirigido es un par no ordenado (A, B)."
+Que diferencia un grafo fuertemente conexo de uno débilmente conexo en grafos dirigidos?,Es fuertemente conexo si existe camino en ambas direcciones entre todos los nodos; es débilmente conexo si existe conexión únicamente al ignorar la dirección de las aristas.
+Que significan las siglas DAG en estructuras de datos y para que se utiliza?,"Directed Acyclic Graph (Grafo Dirigido Acíclico), utilizado para representar flujos donde no puede haber bucles."
+Cual es la ventaja y desventaja de la Matriz de Adyacencia frente a la Lista de Adyacencia en representación de grafos?,La matriz de adyacencia permite comprobar conexiones en O(1) pero ocupa mucho espacio; la lista de adyacencia es más eficiente en espacio para grafos dispersos.
+"Cual es la complejidad temporal promedio esperada para las operaciones de inserción, búsqueda y eliminación en una tabla hash?",Tiempo constante O(1).
+Como se calcula el índice en un array para una clave k usando una función hash h(k) y un tamaño de tabla T?,indice = h(k) % T (módulo del tamaño de la tabla).
+"En tablas hash, en que consiste la técnica de resolución de colisiones por encadenamiento (chaining)?",Cada posición de la tabla contiene una estructura secundaria (como una lista enlazada) donde se almacenan todos los elementos que colisionan en ese índice.
+"En direccionamiento abierto, en que consiste el sondeo lineal (linear probing)?","Si ocurre una colisión, se revisan de forma secuencial las posiciones siguientes una a una (i+1, i+2...) hasta encontrar una vacía."
+"En direccionamiento abierto, en que consiste el sondeo cuadrático (quadratic probing)?","El salto de búsqueda de una posición libre crece cuadráticamente (i+1 al cuadrado, i+2 al cuadrado...)."
+"En direccionamiento abierto, en que consiste el doble hashing?",Aplica una segunda función hash para calcular el tamaño del salto de búsqueda ante una colisión.
+Por que conviene que el tamaño de una tabla hash sea un número primo?,Para mejorar la dispersión de los índices y reducir el número de colisiones.
+Como se define el factor de carga (load factor) en una tabla hash y a partir de que umbral se recomienda redimensionar?,Es la relación entre el número de elementos y el tamaño de la tabla; se recomienda redimensionar cuando supera el valor 0.7.
+Que tres estructuras internas principales pueden utilizarse para implementar un diccionario?,"Tablas hash, árboles balanceados (AVL / Rojo-Negro) y tries."
+Cual es la característica fundamental de un Conjunto (Set) respecto a sus elementos?,"Almacena una colección de elementos únicos, sin orden particular y sin permitir valores duplicados."
+Cual es la complejidad temporal de las operaciones en un HashSet frente a un TreeSet?,HashSet ofrece un tiempo medio O(1); TreeSet ofrece complejidad O(log n) manteniendo los elementos ordenados.
+Cuales son las 5 características fundamentales que definen a un algoritmo?,"Finitud, Definición precisa, Entrada, Salida y Eficiencia."
+Cual es la complejidad temporal en el peor caso y mejor caso de la búsqueda lineal (secuencial)?,Peor caso: O(n); Mejor caso: O(1) (si el elemento está en la primera posición).
+Cual es el requisito previo imprescindible para poder aplicar el algoritmo de Búsqueda Binaria?,Que los datos estén previamente ordenados.
+Cual es la complejidad temporal de la Búsqueda Binaria en el peor caso y en el mejor caso?,Peor caso: O(log n); Mejor caso: O(1) (si el elemento central coincide en la primera comparación).
+Como se mide la complejidad temporal de un algoritmo?,"No se mide en segundos, sino en el número de operaciones fundamentales que realiza en función del tamaño de la entrada n."
+Cual es la complejidad temporal del algoritmo de ordenación por Burbuja (Bubble Sort)?,O(n al cuadrado).
+Cual es la complejidad temporal en el peor y mejor caso de la ordenación por Inserción (Insertion Sort)?,Peor caso: O(n al cuadrado); Mejor caso (lista ya ordenada): O(n).
+Cual es la complejidad temporal del algoritmo de ordenación por Selección (Selection Sort)?,O(n al cuadrado).
+Es estable por defecto el algoritmo de ordenación por Selección (Selection Sort)?,"No, por defecto no es estable, aunque existen versiones modificadas que si lo son."
+Cual es la complejidad temporal de Quicksort en el promedio y en el peor caso?,Promedio: O(n log n); Peor caso: O(n al cuadrado) (cuando el pivote elegido es el mínimo o el máximo).
+"Cual es la complejidad temporal del algoritmo Mergesort en el peor, mejor y promedio caso?",O(n log n) en todos los casos.
+Que algoritmo híbrido de ordenación utilizan internamente Python (sorted) y Java (Arrays.sort para objetos)?,Timsort (un híbrido entre Mergesort e Insertion Sort).
+Que algoritmo híbrido de ordenación utiliza internamente C++ en std::sort?,"Introsort (un híbrido entre Quicksort, Heapsort e Insertion Sort)."
+Que complejidad temporal garantizan los algoritmos híbridos Timsort e Introsort en el peor caso?,Garantizan O(n log n).
+Cuales son los 2 requisitos fundamentales que debe cumplir toda función recursiva?,Caso base (condición de parada para evitar desbordamiento de pila) y Llamada recursiva (llamada a sí misma con una versión más sencilla del problema).
+Que diferencia existe entre la recursividad directa y la indirecta?,En la directa la función se llama a sí misma de forma explícita en su propio cuerpo; en la indirecta la función A llama a B y B vuelve a llamar a A.
+En que consiste la recursividad de cola (tail recursion)?,Es una forma especial de recursividad donde la llamada recursiva es la última operación que realiza la función antes de retornar el resultado.
+Cual es la secuencia de visita en el recorrido de un árbol binario en Inorden (in-order)?,Subárbol izquierdo  a  Nodo raíz  a  Subárbol derecho.
+Que resultado produce un recorrido en Inorden sobre un Árbol Binario de Búsqueda (BST)?,Devuelve los elementos ordenados de menor a mayor.
+Cual es la secuencia de visita en el recorrido de un árbol binario en Preorden (pre-order) y para que se utiliza principalmente?,Nodo raíz  a  Subárbol izquierdo  a  Subárbol derecho; se utiliza para copiar o serializar árboles.
+Cual es la secuencia de visita en el recorrido de un árbol binario en Postorden (post-order) y para que se utiliza principalmente?,Subárbol izquierdo  a  Subárbol derecho  a  Nodo raíz; se utiliza para liberar memoria o eliminar nodos tras sus hijos.
+"Dado un BST con raíz 4, hijo izq 2 (hijos 1 y 3) e hijo der 6 (hijos 5 y 7), cual es el resultado del recorrido Inorden?",1  a  2  a  3  a  4  a  5  a  6  a  7
+"Dado un BST con raíz 4, hijo izq 2 (hijos 1 y 3) e hijo der 6 (hijos 5 y 7), cual es el resultado del recorrido Preorden?",4  a  2  a  1  a  3  a  6  a  5  a  7
+"Dado un BST con raíz 4, hijo izq 2 (hijos 1 y 3) e hijo der 6 (hijos 5 y 7), cual es el resultado del recorrido Postorden?",1  a  3  a  2  a  5  a  7  a  6  a  4
+"Cual es la complejidad temporal de los recorridos de árboles (inorden, preorden, postorden)?","O(n), siendo n el número total de nodos."
+Que estructura de datos auxiliar utiliza el algoritmo DFS (Búsqueda en Profundidad) para su implementación?,Una Pila (o la pila de llamadas mediante recursión).
+Que estructura de datos auxiliar utiliza el algoritmo BFS (Búsqueda en Anchura) para su implementación?,Una Cola.
+Cual es la complejidad temporal de los algoritmos de recorrido de grafos DFS y BFS?,"O(V + E), donde V es el número de vértices y E el número de aristas."
+Cuales son las tres categorías generales de ficheros según la naturaleza de sus datos?,"Ficheros de texto, ficheros binarios y ficheros estructurados."
+Como funciona el modo de acceso secuencial a un fichero?,Los registros se recorren uno a uno desde el principio hasta el final en el orden físico en que fueron almacenados.
+Cual es la fórmula matemática para calcular la posición de un registro en el acceso directo o aleatorio?,posicion = direccion_base + (numero_registro * tamaño_registro)
+Que requisito esencial deben cumplir los registros para permitir un acceso directo o aleatorio eficiente?,Que tengan longitud fija (organización uniforme).
+Como combina el acceso indexado las ventajas del acceso secuencial y del aleatorio?,"Utiliza estructuras de índices auxiliares (tablas, árboles B/B+ o hash) que asocian claves con la posición física del registro en el fichero."
+"En la organización de ficheros, cual es la diferencia entre el índice primario y los índices secundarios?","El índice primario se crea sobre la clave principal del registro; los índices secundarios permiten búsquedas por otros campos (nombre, fecha, etc.)."
+"En un fichero con organización directa y tamaño de registro de 100 bytes, cual es la posición en bytes del registro con ID 458?",45.700 bytes (calculado como 100 * (458 - 1)).
+"En la organización por dispersión (hashing) de ficheros, cuales son las dos estrategias principales para resolver colisiones?","Encadenamiento (listas enlazadas) y Direccionamiento abierto (sondeo lineal, cuadrático o doble hashing)."
+"Cuales son las características distintivas de los formatos de texto JSON, XML y YAML?","JSON usa pares clave-valor ligero para APIs; XML usa estructura jerárquica con etiquetas personalizadas autodescriptivas; YAML es legible y conciso usado en configuraciones (Docker, Ansible)."
+"Que tipo de datos almacenan los ficheros con extensión .BIN, .EXE y .DAT?",Son ficheros binarios no legibles directamente: BIN almacena datos sin estructura estándar (firmware/imágenes); EXE ejecutables de Windows; DAT datos binarios genéricos del programa que lo genera.
+"Que diferencia de funcionalidad existe entre los formatos de empaquetado y compresión TAR, GZIP, ZIP y RAR?",TAR empaqueta archivos sin comprimir; GZIP comprime archivos individuales (Linux); ZIP comprime múltiples archivos sin pérdida; RAR ofrece mayor compresión sin pérdida pero requiere software propietario.
+Cual es la diferencia entre el formato de base de datos MDB y ACCDB en Microsoft Access?,"MDB es el formato heredado (legacy) propietario de Access, que fue sustituido a partir de Access 2007 por el formato ACCDB."
+Que caracteriza al formato de base de datos SQLite (.sqlite o .db)?,"Es una base de datos ligera almacenada integramente en un solo archivo binario, muy usada en aplicaciones móviles o embebidas."
+Cual es la diferencia en la preservación de calidad y soporte de transparencia entre los formatos de imagen JPG y PNG?,JPG utiliza compresión con pérdida y no admite transparencias; PNG utiliza compresión sin pérdida y admite transparencias.
